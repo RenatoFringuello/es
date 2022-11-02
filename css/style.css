@@ -117,15 +117,21 @@ main{
     #intro .card:first-child{
         flex-basis: calc(67% - .8rem);
     }
+    #intro .card{
+        flex-basis: calc(33% - .8rem);
+    }
         /* testimonials */
     #testimonials .card{
         flex-basis: 100%;
+    }
+        /* benefits */
+    #benefits .card{
+        flex-basis: calc(50% - .8rem);
     }
 
     /* classes */
     .card{
         margin: .8rem 0 ;
-        flex-basis: calc(33% - .8rem);
     }
 }
 
@@ -136,9 +142,14 @@ main{
         padding: 2.5rem 0;
     }
 
-    /* planning */
+    /* main */
+        /* planning */
     #planning .container > div{
         flex-basis: 40%;
+    }
+        /* benefits */
+    #benefits .card{
+        flex-basis: calc(33% - .8rem);
     }
    
 }
