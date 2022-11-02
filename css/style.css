@@ -18,12 +18,37 @@ header{
     background-color: aqua;
 }
 header .container{
-    padding: .5rem 0;
+    background-color: blueviolet;
+    padding: 1rem 2rem;
 }
+
 header .logo,
 header nav{
     background-color: blue;
     padding:1rem;
+}
+
+/* -------------------------------------------------------- */
+/*                          MAIN                            */
+/* -------------------------------------------------------- */
+main{
+    background-color: bisque;
+}
+main .container{
+    background-color: yellow;
+}
+
+main .cards{
+    background-color: brown;
+}
+main .card{
+    background-color: rebeccapurple;
+    flex-basis: 100%;
+    border:1px solid white;
+    border-radius: 20px;
+    margin : .8rem 0;
+    /* da cancellare */
+    height: 300px;
 }
 
 
@@ -33,6 +58,7 @@ header nav{
 .container{
     width: 100%;
     margin:0 auto;
+    padding: 3rem 2rem 4.5rem;
 }
 
 /* flex */
@@ -57,12 +83,22 @@ header nav{
 /* -------------------------------------------------------- */
 /* tablet */
 @media screen and (min-width : 480px) {
-    
+    /* main */
+    main .card{
+        margin: .8rem 0 ;
+        flex-basis: calc(33% - .8rem);
+    }
+    main .card:first-child{
+        flex-basis: calc(67% - .8rem);
+    }
 }
 
 /* desktop */
 @media screen and (min-width : 768px) {
     .container{
         width: 70%;
+        padding: 2.5rem 0;
     }
+
+   
 }
