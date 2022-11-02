@@ -31,7 +31,7 @@ header nav{
 /*                         CLASSES                          */
 /* -------------------------------------------------------- */
 .container{
-    width: 70%;
+    width: 100%;
     margin:0 auto;
 }
 
@@ -50,4 +50,19 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* -------------------------------------------------------- */
+/*                        RESPONSIVE                        */
+/* -------------------------------------------------------- */
+/* tablet */
+@media screen and (min-width : 480px) {
+    
+}
+
+/* desktop */
+@media screen and (min-width : 768px) {
+    .container{
+        width: 70%;
+    }
 }
