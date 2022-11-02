@@ -34,14 +34,15 @@ header nav{
 main{
     background-color: bisque;
 }
-main .container{
+
+/* intro */
+#intro .container{
     background-color: yellow;
 }
-
-main .cards{
+#intro .cards{
     background-color: brown;
 }
-main .card{
+#intro .card{
     background-color: rebeccapurple;
     flex-basis: 100%;
     border:1px solid white;
@@ -51,6 +52,23 @@ main .card{
     height: 300px;
 }
 
+/* planning */
+#planning .container{
+    background-color: aqua;
+}
+#planning .container > div{
+    flex-basis: 100%;
+}
+#planning .left{
+    background-color: cadetblue;
+    /* da cancellare */
+    height: 300px;
+}
+#planning .right{
+    background-color: rosybrown;
+    /* da cancellare */
+    height: 250px;
+}
 
 /* -------------------------------------------------------- */
 /*                         CLASSES                          */
@@ -77,6 +95,11 @@ main .card{
     justify-content: space-between;
     align-items: center;
 }
+.flex-between-end{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 /* -------------------------------------------------------- */
 /*                        RESPONSIVE                        */
@@ -84,13 +107,16 @@ main .card{
 /* tablet */
 @media screen and (min-width : 480px) {
     /* main */
-    main .card{
+    /* intro */
+    #intro .card{
         margin: .8rem 0 ;
         flex-basis: calc(33% - .8rem);
     }
-    main .card:first-child{
+    #intro .card:first-child{
         flex-basis: calc(67% - .8rem);
     }
+    
+
 }
 
 /* desktop */
@@ -100,5 +126,9 @@ main .card{
         padding: 2.5rem 0;
     }
 
+    /* planning */
+    #planning .container > div{
+        flex-basis: 40%;
+    }
    
 }
