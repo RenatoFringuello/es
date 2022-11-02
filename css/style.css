@@ -14,16 +14,16 @@ a{
 /* -------------------------------------------------------- */
 /*                         HEADER                           */
 /* -------------------------------------------------------- */
-header{
+.main-header{
     background-color: aqua;
 }
-header .container{
+.main-header .container{
     background-color: blueviolet;
     padding: 1rem 2rem;
 }
 
-header .logo,
-header nav{
+.main-header .logo,
+.main-header nav{
     background-color: blue;
     padding:1rem;
 }
@@ -42,15 +42,6 @@ main{
 #intro .cards{
     background-color: brown;
 }
-#intro .card{
-    background-color: rebeccapurple;
-    flex-basis: 100%;
-    border:1px solid white;
-    border-radius: 20px;
-    margin : .8rem 0;
-    /* da cancellare */
-    height: 300px;
-}
 
 /* planning */
 #planning .container{
@@ -68,6 +59,10 @@ main{
     background-color: rosybrown;
     /* da cancellare */
     height: 250px;
+}
+/* testimonials */
+#testimonials .container{
+    background-color: coral;
 }
 
 /* -------------------------------------------------------- */
@@ -101,22 +96,37 @@ main{
     align-items: flex-end;
 }
 
+/* cards */
+.card{
+    background-color: rebeccapurple;
+    flex-basis: 100%;
+    border-radius: 20px;
+    margin : .8rem 0;
+    /* da cancellare */
+    height: 300px;
+}
+
+
 /* -------------------------------------------------------- */
 /*                        RESPONSIVE                        */
 /* -------------------------------------------------------- */
 /* tablet */
 @media screen and (min-width : 480px) {
     /* main */
-    /* intro */
-    #intro .card{
-        margin: .8rem 0 ;
-        flex-basis: calc(33% - .8rem);
-    }
+        /* intro */
     #intro .card:first-child{
         flex-basis: calc(67% - .8rem);
     }
-    
+        /* testimonials */
+    #testimonials .card{
+        flex-basis: 100%;
+    }
 
+    /* classes */
+    .card{
+        margin: .8rem 0 ;
+        flex-basis: calc(33% - .8rem);
+    }
 }
 
 /* desktop */
