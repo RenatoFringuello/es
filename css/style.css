@@ -80,16 +80,31 @@ main > section:nth-child(even){
 #intro .card h1{
     color: #0084fd;
 }
-#intro .card p{
-    line-height: 1.5rem;
-}
-#intro .card .content > *:not(:last-child){
+#intro .content > *:not(:last-child),
+#planning .content > *:not(:last-child){
     margin-bottom: 1.5rem;
 }
 
 /* planning */
-#planning .container{
-    background-color: aqua;
+#planning{
+    color: white;
+}
+#planning h1.title{
+    font-size: 2.5rem;
+}
+#planning .card{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+#planning i.btn{
+    background-color: #9792e4;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 44px;
 }
 
 /* testimonials */
@@ -134,21 +149,9 @@ footer{
     /* background-color: rosybrown; */
     padding-top: 1.5rem;
 }
-.img-container{
-    text-align: center;
-}
-.img-container,
-.img-container img{
-    width: 100%;
-}
 
-/* position */
-.p-relative{
-    position: relative;
-}
-.p-absolute{
-    position: absolute;
-    bottom:0;
+.content img{
+    width: 100%;
 }
 
 /* flex */
@@ -184,12 +187,21 @@ footer{
     font-size: 1.5rem;
 }
 
+
 /* btn */
 a.btn,
 button{
     border-radius: 50px;
     color:black;
     background: white;
+}
+
+/* font */
+.t-italic{
+    font-style: italic;
+}
+.lh{
+    line-height: 1.8rem;
 }
 
 /* -------------------------------------------------------- */
@@ -226,7 +238,7 @@ button{
         margin: .8rem 0 ;
     }
 
-    .img-container img{
+    .content img{
         max-width: 200px;
     }
 }
@@ -253,8 +265,10 @@ button{
         flex-basis: 50%;
         position: relative;
     }
-    #intro .content.right .img-container{
+    #intro .content img{
         position: absolute;
+        transform: translate(-50%, 0);
+        left:50%;
         bottom: 0;
     }
         /* planning */
