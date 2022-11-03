@@ -23,7 +23,7 @@ nav > ul > li{
 }
 
 img{
-    margin-bottom: -1px;
+    margin-bottom: -5px;
 }
 
 /* -------------------------------------------------------- */
@@ -81,7 +81,7 @@ main > section:nth-child(odd) .title{
    color: white;
 }
 #intro .card .card-icon i{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 #intro .card .card-icon i,
 #intro .card h1{
@@ -142,8 +142,11 @@ main > section:nth-child(odd) .title{
 #features p.lh{
     color:#888;
 }
-/* about-us */
+#features .card .btn{
+    font-size: 1rem;
+}
 
+/* about-us */
 #about-us .lh{
     font-size: 1.1rem;
     line-height: 2.2rem;
@@ -310,7 +313,7 @@ a.btn{
 }
 .title:not(.big-text){
     font-size: 2rem;
-    margin-bottom:3rem;
+    margin-bottom:1.5rem;
 }
 
 /* blockquote */
@@ -358,14 +361,14 @@ a.btn{
 /*                        RESPONSIVE                        */
 /* -------------------------------------------------------- */
 /* tablet */
-@media screen and (min-width : 480px) {
+@media screen and (min-width : 768px) {
     /* main */
         /* intro */
     #intro .card:first-child{
-        flex-basis: calc(200% / 3 - .8rem);
+        flex-basis: calc(((100% - .8rem) / 3) * 2);
     }
     #intro .card{
-        flex-basis: calc(100% / 3 - .8rem);
+        flex-basis: calc((100% - 3.2rem) / 3);
     }
     #intro .content img{
         max-width: 200px;
@@ -477,37 +480,35 @@ a.btn{
         bottom: 0;
         max-width: 250px;
     }
-    #intro .card button.btn{
-        font-size: 1.2rem;
+    #intro .card .card-icon i{
+        font-size: 4rem;
     }
+
         /* planning */
     #planning .content{
-        flex-basis: 30%;
-        margin:0 4rem 0 0;
+        flex-basis: 35%;
+    }
+    #planning .content.left{
+        margin:0 2.5rem 0 0;
     }
     #planning .left .title{
         font-size: 2rem;
     }
     #planning .right .card{
-        width: 100%;
-        font-size: 1rem;
+        font-size: .8rem;
+        
     }
     #planning .right .card img{
         width: 70%;
     }
+    #planning i.btn{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
         /* testimonials */
-    #testimonials header p{
-        font-size: 1.3rem;
-    }
-        /* features */
-    #features header .title{
-        margin: 2.5rem 0 3.5rem;   
-    }
-    #features .card .title{
-        font-size: 5rem;  
-    }
     #features .card{
-        flex-basis: calc(33% - .8rem);
+        flex-basis: calc((100% - 3.2rem) / 3);
     }
         /* about-us */
     #about-us .content.left{
@@ -516,18 +517,15 @@ a.btn{
     #about-us .content.right{
         flex-basis: 25%;   
     }
-    #about-us .lh{
-        font-size: 1.3rem; 
-        line-height: 2.8rem;  
-    }
+    
     /* classes */
     .main-header .container,
     .container{
-        width: 60%;
+        width: 940px;
     }   
-    
-    .title:not(.big-text){
-        margin-bottom:1.5rem;
+
+    .content > *:not(:last-child){
+        margin-bottom: 1rem;
     }
    
 }
