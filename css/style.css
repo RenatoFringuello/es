@@ -256,7 +256,7 @@ footer a{
     justify-content: space-between;
     align-items: center;
 }
-.flex-between-end{
+.flex-center-end{
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -481,7 +481,18 @@ a.btn{
     }
         /* planning */
     #planning .content{
-        flex-basis: 40%;
+        flex-basis: 30%;
+        margin:0 4rem 0 0;
+    }
+    #planning .left .title{
+        font-size: 2rem;
+    }
+    #planning .right .card{
+        width: 100%;
+        font-size: 1rem;
+    }
+    #planning .right .card img{
+        width: 70%;
     }
         /* features */
     #features .card{
