@@ -139,13 +139,34 @@ main > section .content > *:not(:last-child){
     text-transform: capitalize;
     color:#9792e4;
 }
-#features .btn{
-    background-color: #9792e4;
-    color:white;
+#features p.lh{
+    color:#888;
 }
 /* about-us */
-#about-us .container{
-   background-color: black; 
+#about-us .left .title{
+    font-size: 3rem;
+}
+#about-us .lh{
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+}
+#about-us .img-testimonial{
+    margin: 2rem 0;
+}
+#about-us .quote{
+    transform: scale(14);
+    color:#9792e4;
+    top:100px;
+    right:0;
+}
+#about-us .btn-purple{
+    padding: .5rem .8rem;
+    font-weight: normal;
+    letter-spacing: 0rem;
+}
+#about-us .btn-purple i{
+    margin-right: .5rem;
+    font-size: 1rem;
 }
 
 /* get-started */
@@ -236,6 +257,10 @@ footer{
     font-weight: bold;
     letter-spacing: .3rem;
 }
+.btn-purple{
+    background-color: #9792e4;
+    color:white;
+}
 
 /* font */
 .t-italic{
@@ -288,6 +313,9 @@ footer{
 }
 #bob{
     background-image: url('../img/testimonial3.jpg');
+}
+#mark{
+    background-image: url('../img/about.jpg');
 }
 
 /* -------------------------------------------------------- */
