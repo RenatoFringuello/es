@@ -362,10 +362,10 @@ a.btn{
     /* main */
         /* intro */
     #intro .card:first-child{
-        flex-basis: calc(67% - .8rem);
+        flex-basis: calc(200% / 3 - .8rem);
     }
     #intro .card{
-        flex-basis: calc(33% - .8rem);
+        flex-basis: calc(100% / 3 - .8rem);
     }
     #intro .content img{
         max-width: 200px;
@@ -386,10 +386,11 @@ a.btn{
         font-size: 2.8rem;
     }
     #testimonials .content.left{
-        flex-basis: 30%;
+        flex-basis: 240px;
     }
     #testimonials .content.right{
-        flex-basis: 65%;
+        /* non so perchè non funziona il flex-grow:1 */
+        flex-basis: calc(100% - 240px);
     }
     #testimonials .card{
         text-align: start;
@@ -423,7 +424,7 @@ a.btn{
     #about-us .img-testimonial{
         width: 240px;
         height: 240px;
-        margin: 2rem auto;
+        margin: 2rem 0;
     }
         /* get started */
     #get-started .title{
@@ -435,7 +436,7 @@ a.btn{
 
     /* classes */
     .p-container{
-        width:60%;
+        width:500px;
         margin: 0 auto;
     }
     .card{
@@ -494,11 +495,31 @@ a.btn{
     #planning .right .card img{
         width: 70%;
     }
+        /* testimonials */
+    #testimonials header p{
+        font-size: 1.3rem;
+    }
         /* features */
+    #features header .title{
+        margin: 2.5rem 0 3.5rem;   
+    }
+    #features .card .title{
+        font-size: 5rem;  
+    }
     #features .card{
         flex-basis: calc(33% - .8rem);
     }
-
+        /* about-us */
+    #about-us .content.left{
+        flex-basis: 65%;   
+    }
+    #about-us .content.right{
+        flex-basis: 25%;   
+    }
+    #about-us .lh{
+        font-size: 1.3rem; 
+        line-height: 2.8rem;  
+    }
     /* classes */
     .main-header .container,
     .container{
