@@ -119,9 +119,11 @@ main > section:nth-child(odd) .title{
 }
 #testimonials .card{
     background-color: #9792e4;
-   color: white;
+    color: white;
+    border-radius: 50px;
 }
-#testimonials blockquote{
+#testimonials blockquote,
+#testimonials header{
     margin-bottom: 2rem;
 }
 
@@ -169,6 +171,7 @@ main > section:nth-child(odd) .title{
 #get-started .container{
     text-align: center;
     color: white;
+    padding-top: 4rem;
 }
 #get-started .uppercase{
     color:#fff8;
@@ -179,8 +182,8 @@ main > section:nth-child(odd) .title{
 }
 #get-started .btn{
     color:#9792e4;
-    padding:1.2rem 3.5rem;
-    font-size: 1.05rem;
+    padding:1.5rem 4.5rem;
+    font-size: 1.08rem;
 }
 #get-started .credits{
     font-size: .8rem;
@@ -225,11 +228,7 @@ footer a{
 .content img{
     width: 100%;
 }
-.left{
-    /* background-color: cadetblue; */
-}
 .right{
-    /* background-color: rosybrown; */
     padding-top: 1.5rem;
 }
 .img-testimonial{
@@ -280,7 +279,7 @@ footer a{
     color:black;
     background: white;
 
-    padding:.8rem 2.5rem;
+    padding:.8rem 3.5rem;
     font-weight: bold;
     letter-spacing: .2rem;
 }
@@ -308,7 +307,7 @@ footer a{
 }
 .title:not(.big-text){
     font-size: 2rem;
-    margin-bottom:2rem;
+    margin-bottom:3rem;
 }
 
 /* blockquote */
@@ -420,10 +419,18 @@ footer a{
         height: 240px;
         margin: 2rem auto;
     }
+        /* get started */
+    #get-started .title{
+        font-size:3rem;
+    }
+    #get-started .big-text{
+        font-size:6rem;
+    }
 
     /* classes */
-    .container{
-        /* padding: 2.5rem 2.5rem 4.5rem; */
+    .p-container{
+        width:60%;
+        margin: 0 auto;
     }
     .card{
         margin: .8rem 0 ;
