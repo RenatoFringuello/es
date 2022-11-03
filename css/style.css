@@ -150,10 +150,10 @@ main > section:nth-child(odd) .title{
     margin: 2rem 0;
 }
 #about-us .quote{
-    transform: scale(14);
     color:#9792e4;
     top:100px;
     right:0;
+    font-size: 14rem;
 }
 #about-us .btn-purple{
     padding: .5rem .8rem;
@@ -195,7 +195,7 @@ main > section:nth-child(odd) .title{
 footer{
     background-color: #333333;
     text-align: center;
-   color: white;
+    color: white;
     font-size: .9rem;
 }
 footer .container{
@@ -325,6 +325,7 @@ footer a{
 .desc-q-auth{
     font-size: 1.2rem;
     font-weight: bold;
+    letter-spacing: .1rem;
 }
 
 /* position */
@@ -375,7 +376,8 @@ footer a{
         font-size: 4.5rem;
     }
         /* testimonials */
-    #testimonials .title{
+    #testimonials .title,
+    #features .title{
         font-size: 2.8rem;
     }
     #testimonials .content.left{
@@ -389,6 +391,8 @@ footer a{
         flex-basis: 100%;
     }
     #testimonials .img-testimonial{
+        width: 200px;
+        height: 200px;
         margin: 0;
     }
     #testimonials .desc-q{
@@ -399,8 +403,14 @@ footer a{
         flex-basis: calc(50% - .8rem);
     }
         /* about-us */
+    #about-us .container{
+        padding: 4.5rem 3.5rem 10rem; 
+    }
+    #about-us .big-text{
+        font-size: 5rem;
+    }
     #about-us .content.left{
-        flex-basis: 55%;
+        flex-basis: 50%;
     }
     #about-us .content.right{
         flex-basis: 35%;
@@ -412,10 +422,15 @@ footer a{
     }
 
     /* classes */
+    .container{
+        /* padding: 2.5rem 2.5rem 4.5rem; */
+    }
     .card{
         margin: .8rem 0 ;
     }
-
+    .right{
+        padding: 0;
+    }
     
 }
 
