@@ -31,7 +31,7 @@ img{
 /* -------------------------------------------------------- */
 .main-header{
     background-color: #0084fd;
-    color:white;
+   color: white;
 }
 .main-header .container{
     padding: 1rem 2rem;
@@ -39,7 +39,7 @@ img{
 .main-header nav > ul > li:not(.mobile){
     display: none;
 }
-.main-header nav a,
+.main-header nav li:not(.mobile) a,
 .btn{
     padding: 0.2rem 0.8rem;
 }
@@ -78,7 +78,7 @@ main > section:nth-child(odd) .title{
 }
 #intro .card button{
     background-color: #0084fd;
-    color:white;
+   color: white;
 }
 #intro .card .card-icon i{
     font-size: 5rem;
@@ -92,6 +92,9 @@ main > section:nth-child(odd) .title{
 /* planning */
 #planning{
     color: white;
+}
+#planning .left img{
+    margin: 3rem 0;
 }
 #planning .card{
     background-color: white;
@@ -116,7 +119,10 @@ main > section:nth-child(odd) .title{
 }
 #testimonials .card{
     background-color: #9792e4;
-    color:white;
+   color: white;
+}
+#testimonials blockquote{
+    margin-bottom: 2rem;
 }
 
 /* features */
@@ -180,7 +186,7 @@ main > section:nth-child(odd) .title{
     font-size: .8rem;
 }
 #get-started a{
-    color:white;
+   color: white;
 }
 
 /* -------------------------------------------------------- */
@@ -189,7 +195,7 @@ main > section:nth-child(odd) .title{
 footer{
     background-color: #333333;
     text-align: center;
-    color:white;
+   color: white;
     font-size: .9rem;
 }
 footer .container{
@@ -208,7 +214,7 @@ footer a{
 .container{
     width: 100%;
     margin:0 auto;
-    padding: 3rem 2rem 4.5rem;
+    padding: 2.5rem 2rem 4.5rem;
 }
 .content{
     flex-basis: 100%;
@@ -263,7 +269,7 @@ footer a{
     margin : .8rem 0;
     padding:2rem;
 }
-.card .title{
+.card h1.title{
     font-size: 1.5rem;
 }
 
@@ -280,7 +286,7 @@ footer a{
 }
 .btn-purple{
     background-color: #9792e4 !important;
-    color:white !important;
+    color: white !important;
 }
 
 /* font */
@@ -306,19 +312,14 @@ footer a{
 }
 
 /* blockquote */
-.open-q{
-    padding-right: .15rem;
-}
-.close-q{
-    padding-left: .15rem;
-}
 .quote{
-    display: inline-block;
-    transform: scale(4.5);
-    position: relative;
-    top:15px;
+    font-size:4rem;
+    position:relative;
+    top:30px;
+    line-height:1rem;
 }
 .desc-q{
+    text-indent: 100px;
     font-size: 1.1rem;
 }
 .desc-q-auth{
@@ -363,9 +364,35 @@ footer a{
     #intro .card{
         flex-basis: calc(33% - .8rem);
     }
+    #intro .content img{
+        max-width: 200px;
+    }
+        /* planning */
+    #planning .left img{
+        margin: 3rem 0 5rem;
+    }
+    #planning .left .title{
+        font-size: 4.5rem;
+    }
         /* testimonials */
+    #testimonials .title{
+        font-size: 2.8rem;
+    }
+    #testimonials .content.left{
+        flex-basis: 30%;
+    }
+    #testimonials .content.right{
+        flex-basis: 65%;
+    }
     #testimonials .card{
+        text-align: start;
         flex-basis: 100%;
+    }
+    #testimonials .img-testimonial{
+        margin: 0;
+    }
+    #testimonials .desc-q{
+        font-size: 1.4rem;
     }
         /* features */
     #features .card{
@@ -373,10 +400,15 @@ footer a{
     }
         /* about-us */
     #about-us .content.left{
-        flex-basis: 70%;
+        flex-basis: 55%;
     }
     #about-us .content.right{
-        flex-basis: 30%;
+        flex-basis: 35%;
+    }
+    #about-us .img-testimonial{
+        width: 240px;
+        height: 240px;
+        margin: 2rem auto;
     }
 
     /* classes */
@@ -384,9 +416,7 @@ footer a{
         margin: .8rem 0 ;
     }
 
-    .content img{
-        max-width: 200px;
-    }
+    
 }
 
 /* desktop */
