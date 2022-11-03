@@ -64,7 +64,8 @@ main > section:nth-child(odd) .title{
     color: #9792e4;
 }
 main section h1.title{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom:2rem;
 }
 
 main > section .content > *:not(:last-child){
@@ -85,9 +86,6 @@ main > section .content > *:not(:last-child){
 #intro .card button{
     background-color: #0084fd;
     color:white;
-    padding:.8rem 2.5rem;
-    font-weight: bold;
-    letter-spacing: .3rem;
 }
 #intro .card .card-icon i{
     font-size: 5rem;
@@ -114,11 +112,13 @@ main > section .content > *:not(:last-child){
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    line-height: 44px;
+    line-height: 50px;
+    padding:0;
 }
 
 /* testimonials */
-#testimonials{
+#testimonials,
+#features{
     text-align: center;
 }
 #testimonials .card{
@@ -126,6 +126,23 @@ main > section .content > *:not(:last-child){
     color:white;
 }
 
+/* features */
+#features .card{
+    background-color: white;
+    text-align: start;
+}
+#features .card .title{
+    font-size:3.5rem;
+    color:#9792e4;
+}
+#features .sub-title{
+    text-transform: capitalize;
+    color:#9792e4;
+}
+#features .btn{
+    background-color: #9792e4;
+    color:white;
+}
 /* about-us */
 #about-us .container{
    background-color: black; 
@@ -200,7 +217,6 @@ footer{
 
 /* cards */
 .card{
-    background-color: rebeccapurple;
     border-radius: 20px;
     margin : .8rem 0;
     padding:2rem;
@@ -211,11 +227,14 @@ footer{
 
 
 /* btn */
-a.btn,
-button{
+.btn{
     border-radius: 50px;
     color:black;
     background: white;
+
+    padding:.8rem 2.5rem;
+    font-weight: bold;
+    letter-spacing: .3rem;
 }
 
 /* font */
